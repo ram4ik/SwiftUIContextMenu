@@ -10,7 +10,33 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        Image(systemName: "person")
+            .font(.largeTitle)
+            .padding()
+            .contextMenu{
+                VStack {
+                    Button(action: {
+                        
+                    }) {
+                        Image(systemName: "heart")
+                        Text("Pulse")
+                    }
+                    
+                    Button(action: {
+                        
+                    }) {
+                        Image(systemName: "paperplane")
+                        Text("Diagram")
+                    }
+                    
+                    Button(action: {
+                        
+                    }) {
+                        Image(systemName: "gear")
+                        Text("Results")
+                    }
+                }
+        }
     }
 }
 
